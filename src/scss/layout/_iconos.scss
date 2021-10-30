@@ -1,0 +1,33 @@
+.iconos-nosotros{
+    @include tablet{
+        @include grid( 3, 2rem );
+    }
+}
+
+.icono{
+    text-align: center;
+
+    img{
+        height: 10rem;
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+}
+
+.iconos-caracteristicas{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+
+    li{
+        align-items: center;
+        display: flex;
+        p{
+            font-weight: $bold;
+            margin-left: 1rem;
+        }
+    }
+}

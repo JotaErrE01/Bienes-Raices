@@ -1,0 +1,75 @@
+.barra{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem;
+
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion {
+    opacity: 0;
+    height: 0;
+
+    @include tablet{
+        display: flex;
+        gap: 1.2rem;
+        height: auto;
+        opacity: 1;
+    }
+
+    a {
+        color: $blanco;
+        display: block;
+        font-size: 2.2rem;
+        text-align: center;
+        text-decoration: none;
+        
+        @include tablet{
+            font-size: 1.8rem;
+        }
+    }
+
+    :hover{
+        color: $verde;
+    }
+
+    
+}
+
+.mobile-menu{
+    margin-top: 2rem;
+    img{
+        width: 5rem;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+.mostrar{
+    opacity: 1;
+    height: auto;
+    transition: opacity .3s ease-in-out, height .3s linear;
+
+    @include tablet{
+        display: flex;
+    }
+}
+
+.derecha{
+    margin: 3rem 0;
+    filter: invert(100%);
+
+    @include tablet{
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton{
+        width: 3rem;
+        cursor: pointer;
+    }
+}
