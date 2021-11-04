@@ -1,0 +1,19 @@
+{
+    "name": "jonthan/bienes_raices_poo",
+    "description": "Convirtiendo el proyecto de bienes raices a POO.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonathan Ruiz",
+            "email": "jruiz.967@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    }
+}

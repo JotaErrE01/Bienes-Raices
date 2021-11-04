@@ -1,3 +1,13 @@
 <?php 
-    define('TEMPLATES_URL', __DIR__ . '/templates');
-    define('FUNCIONES_URL', __DIR__ . 'funciones.php');
+
+require 'funciones.php';
+require 'config/database.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+use App\ActiveRecord;
+
+$db = conectarDb();
+
+// $propiedad = new Propiedad();
+ActiveRecord::setDb($db);
+// $propiedad->setDb( $db );

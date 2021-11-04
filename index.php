@@ -1,5 +1,5 @@
 <?php
-    require 'includes/funciones.php';
+    require 'includes/app.php';
     incluirTemplate( 'header', true );
 ?>
 
@@ -28,7 +28,6 @@
     <section class="contenedor seccion">
         <h2>Casas y Deparamentos en Venta</h2>
         <?php 
-            $limit = 3;
             include 'includes/templates/anuncios.php';
         ?>
 

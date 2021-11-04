@@ -1,10 +1,6 @@
 <?php
 
     function conectarDb() : mysqli{
-        $db = mysqli_connect('localhost', 'root', 'jotaerre01', 'bienes_raices');
-        if ($db->connect_errno) {
-            echo "Fallo al conectar a MySQL: (" . $db->connect_errno . ") " . $db->connect_error;
-            exit;
-        }
-        return $db;
+        $db = new mysqli('localhost', 'root', 'jotaerre01', 'bienes_raices');
+        return $db->connect_errno ? die('Error con la conexión a la base de datos') : $db;
     }
